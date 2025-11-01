@@ -2,7 +2,7 @@
 
 Este é um projeto que demonstra a implementação completa de um **checkout transparente** utilizando a API de pagamentos do Asaas.
 
-O objetivo é implementar uma solução de checkout transparente para a venda de um produto (simulado), servindo como protótipo de aprendizado para uma futura implementação real na venda de infoprodutos. O sistema permitirá o pagamento (Cartão de Crédito, Boleto ou PIX) diretamente no site próprio, sem redirecionamento, integrando-se à API do Asaas (em modo Sandbox) para processamento e a um banco de dados (Supabase/Postgres) para gestão de clientes e pedidos.
+O objetivo é implementar uma solução de checkout transparente para a venda de um produto (simulado), servindo como aprendizado. O sistema permitirá o pagamento (Cartão de Crédito, Boleto ou PIX) diretamente no site próprio, sem redirecionamento, integrando-se à API do Asaas (em modo Sandbox) para processamento e a um banco de dados (Supabase/Postgres) para gestão de clientes e pedidos.
 
 ---
 
