@@ -1,14 +1,14 @@
 # Checkout Transparente <sub>(em desenvolvimento)</sub>
 
-Este é um projeto que demonstra a implementação completa de um **checkout transparente** utilizando a API de pagamentos do Asaas.
+Este é um projeto que demonstra a implementação completa de um checkout transparente utilizando a API de pagamentos do Asaas.
 
 O objetivo é implementar uma solução de checkout transparente para a venda de um produto, servindo como aprendizado para novas tecnologias e consolidação de coisas que já sei. O sistema permitirá o pagamento (Cartão de Crédito, Boleto ou PIX) diretamente no site próprio, sem redirecionamento, integrando-se à API do Asaas em modo Sandbox para processamento e a um banco de dados para gestão de clientes e pedidos.
 
 ---
 
-## Arquitetura e Fluxo do Usuário
+## Sobre o projeto
 
-O projeto utiliza uma arquitetura **monolítica** em Python, com o **Flask** sendo responsável tanto pela lógica de back-end quanto pela renderização das páginas.
+O projeto utiliza uma arquitetura monolítica em Python, com o Flask sendo responsável tanto pela lógica de back-end quanto pela renderização das páginas.
 
 O fluxo de compra é dividido em três páginas:
 
@@ -31,5 +31,5 @@ O fluxo de compra é dividido em três páginas:
 
 A documentação pode ser encontrada na pasta `/docs`
 
-* [Análise de requisitos](./docs/requisitos/Documento%20de%20Requisitos.pdf)
-* Modelagem do banco de dados
+* [Análise de requisitos](./docs/requisitos/)
+* [Modelagem do banco de dados](.docs/modelagem/)
