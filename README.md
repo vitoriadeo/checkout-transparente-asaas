@@ -1,4 +1,4 @@
-# Checkout Transparente com Asaas <sub>(em desenvolvimento)</sub>
+# Checkout Transparente <sub>(em desenvolvimento)</sub>
 
 Este é um projeto que demonstra a implementação completa de um **checkout transparente** utilizando a API de pagamentos do Asaas.
 
