@@ -32,4 +32,4 @@ O fluxo de compra é dividido em três páginas:
 A documentação pode ser encontrada na pasta `/docs`
 
 * [Análise de requisitos](./docs/requisitos/)
-* [Modelagem do banco de dados](.docs/modelagem/)
+* [Modelagem do banco de dados](./docs/modelagem/)
