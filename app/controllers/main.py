@@ -1,0 +1,33 @@
+from flask import Blueprint, render_template, flash, redirect, url_for
+
+section = Blueprint("main", __name__)
+
+
+@section.route("/product") # página /get
+def product():
+    return render_template("product.html")
+
+
+@section.route("/add-cart", method=['POST'])
+def add_cart():
+    return redirect(url_for('main.checkout'))
+
+
+# @section.route("/pay", method=['POST'])
+# def pay():
+#     return 
+
+
+@section.route("/checkout") # página /get
+def checkout():
+    return render_template("checkout.html")
+
+
+@section.route("/order-placed") # página /get
+def order_placed():
+    return render_template("order-placed.html")
+
+
+# @section.route("/webhook-asaas", method=['POST'])
+# def webhook_asaas():
+#     return 
