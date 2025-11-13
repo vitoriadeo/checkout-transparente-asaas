@@ -1,10 +1,10 @@
-import psycopg2
 from flask import current_app, g
+import pyodbc
 
 def get_db():
     if 'db' not in g:
-        db_url = current_app.config['DB_URL']
-        g.db = psycopg2.connect(db_url)
+        db_url = current_app.config['pyodbc_conn']
+        g.db = pyodbc.connect(db_url)
 
     return g.db
 
