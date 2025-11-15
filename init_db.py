@@ -6,11 +6,10 @@ logger = logging.getLogger(__name__)
 conn_str = Config.pyodbc_conn
 conn = None
 cur = None
-print(f"DEBUG: String de Conexão Sendo Usada:\n>>> {conn_str} <<<")
 
 try:
     logger.info("Conectando aos AWS RDS/SQL Server...")
-    conn = pyodbc.connect(conn_str, autocommit=True)
+    conn = pyodbc.connect(conn_str)
     logger.info("Conexão estabelecida!")
 
     cur = conn.cursor()
@@ -47,7 +46,7 @@ try:
         quantidade tinyint not null default 1,
         valor_total decimal(7,2) not null,
         status_pagamento nvarchar(50) not null default 'pendente',
-        data_compra date not null default current_date(),
+        data_compra date not null default getdate(),
         id_pagamento_asaas varchar(255) null unique,
         id_cliente smallint not null references cliente(id_cliente),
         id_produto tinyint not null references produto(id_produto))
@@ -55,14 +54,19 @@ try:
     logger.info("Criando tabela PEDIDO...")
     cur.execute(create_table_pedido)
 
+    conn.commit()
     logger.info("Tabelas criadas com sucesso!")
 
 except pyodbc.OperationalError as e:
     logger.error(f"Erro de conexão: {e}")
+    conn.rollback()
+    logger.warning(">> Desfazendo transação")
     raise e
 
 except Exception as e:
     logger.error(f"Falha na iniciallização do banco: {e}")
+    conn.rollback()
+    logger.warning(">> Desfazendo transação")
     raise e
 
 finally:

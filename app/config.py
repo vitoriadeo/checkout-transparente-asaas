@@ -20,6 +20,7 @@ class Config:
         f"PWD={DB_PASSWORD};"
         f"Encrypt=yes;"
         f"TrustServerCertificate=yes;"
+        f"Trusted_Connection=no"
     )
 
 
