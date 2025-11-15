@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-scale">
+
+    <title>{% block title %} PermaBubble {% endblock %}</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <h1>PermaBubble</h1>
+    <h2>Kit de Reparo para Bolhas de Sabão</h2>
+
+    <main id="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer id="footer">
+        <small><u>Esse produto é de mentirinha e essa página faz parte de um projeto de estudo, veja <a
+                    href="https://github.com/vitoriadeo/checkout-transparente" target="_blank">aqui.</a></u></small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %} {{super()}} - Erro 404 {% endblock %}
+
+{% block content %}
+<h1>Essa página não foi encontrada ou não existe</h1>
+<p>Volte para a <a href="{{url_for('main.product')}}">página inicial.</a></p>
+{% endblock %}

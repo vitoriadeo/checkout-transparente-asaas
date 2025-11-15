@@ -8,7 +8,7 @@ def product():
     return render_template("product.html")
 
 
-@section.route("/add-cart", method=['POST'])
+@section.route("/add-cart", methods=['POST'])
 def add_cart():
     return redirect(url_for('main.checkout'))
 
