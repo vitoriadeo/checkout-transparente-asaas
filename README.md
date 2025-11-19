@@ -12,7 +12,7 @@ O projeto utiliza uma arquitetura monolítica em Python, com o Flask sendo respo
 
 O fluxo de compra é dividido em três páginas:
 
-1. **Página de Produto:** Exibe um produto fictício numa página estilo landing page. Nessa página há informações do produto, seletor de quantidade do produto, valor e um botão 'Comprar'.
+1. **Página de Produto:** Exibe um produto fictício numa página simples. Nessa página há informações do produto, seletor de quantidade do produto, valor e um botão 'Comprar'.
 2. **Página de Checkout:** Para onde o usuário é levado após adicionar ao carrinho. Exibe o resumo do pedido e o formulário para pagamento.
 3. **Página de Pedido Confirmado:** Página de sucesso exibida após um pagamento ser aprovado.
 
