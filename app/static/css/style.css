@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'PixelOperator';
+    src: url('../fonts/PixelOperator.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rainyhearts';
+    src: url('../fonts/rainyhearts.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: rgb(208, 223, 193);
+    color: rgb(81, 87, 81);
+    font-family: 'Alegreya';
+}
+
+a {
+    color: rgb(80, 57, 38);
+    text-decoration: none;
+}
+
+b {
+    color: #3f2c1f;
+}
+
+h1 {
+    font-family: "Macondo Swash Caps", cursive;
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(89, 94, 86);
+    text-shadow: #64776596 1px 0 5px;
+}
+
+h2 {
+    font-family: "Alegreya", serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.repolho-img {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    background-color: rgb(124, 82, 58);
+    border: none;
+    padding: 10px 10px;
+    color: rgb(253, 255, 240);
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Alegreya';
+
+}
+
+.descricao {
+    line-height: 1.3rem;
+}
+
+.sign {
+    width: 50px;
+    margin: 20px auto;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #647765;
+    background-color: #83a762;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #647765;
+    background: rgb(213, 223, 193);
+}
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: rgb(247, 240, 227);
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #6477659a;
+}
+
+#footer,
+#header {
+    width: 80%;
+    margin: 20px auto;
+    text-align: right;
+}
+
+.disclaimer {
+    padding: 0 15px;
+    background-color: rgb(247, 240, 227);
+    box-sizing: border-box;
+    border: 1px solid #6477659a;
+    text-align: left;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'PixelOperator';
+    image-rendering: pixelated;
+    margin-bottom: 20px;
+}
+
+.dis-title {
+    background-color: #647765;
+    color: bisque;
+    padding: 5px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Alegreya';
+    text-align: left;
+}
+
+.minibutton {
+    background-color: rgb(124, 82, 58);
+    border: none;
+    padding: 1px 4px;
+    color: rgb(253, 255, 240);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.minibutton-2 {
+    background-color: #647765;
+    border: none;
+    padding: 1px 4px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.valor {
+    font-size: 2rem;
+    margin: 0;
+    background-color: #3e3b2363;
+    padding: 0 8px;
+    border-radius: 3px;
+    color: #fff8e1;
+}
+
+.valorxquantidade {
+    display: flex;           /* Coloca um ao lado do outro */
+    align-items: center;     /* Alinha o centro verticalmente (para o número não ficar torto) */
+    gap: 15px;               /* Cria um espaço vazio entre o preço e a caixinha */
+    margin-bottom: 1rem;     /* Um respiro antes do botão de comprar */
+}
+
+/* Dica extra de estilo para o input combinar com o tema */
+.input-qtd {
+    width: 60px;             /* Para não ficar muito largo */
+    height: 40px;            /* Altura confortável para o dedo (mobile) */
+    font-family: 'PixelOperator', sans-serif; /* Ou a sua fonte escolhida */
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid #3e2723; /* Borda marrom estilo terra */
+    border-radius: 4px;
+    background-color: #fff8e1; /* Fundo meio pergaminho */
+}
+
+@media (min-width: 600px) {
+    .repolho-img {
+        float: left;
+        width: 150px;
+    }
+
+    #main,
+    #footer,
+    #header {
+        width: 60%;
+    }
+}
