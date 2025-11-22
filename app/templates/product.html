@@ -2,68 +2,16 @@
 {% block title %} {{super()}} - Produto {% endblock %}
 
 {% block content %}
-<div class="beneficios">
-    <p>Você já soprou a bolha perfeita? Aquela esfera iridescente, flutuando majestosamente, um pequeno milagre
-        da
-        física... apenas para vê-la encontrar seu fim trágico em uma folha de grama ou, pior, na implacável
-        força da
-        gravidade. A alegria dura apenas segundos. O trauma da "Pop-fobia" é real.</p>
+<section class="produto">
+    <img class="repolho-img" src="{{url_for('static', filename='img/32187501.png')}}">
+    <p class="descricao"><b>Repolhos de primeira!</b><br>Garantidamente os mais... viajados do Reino da Terra.
+        Cuidadosamente
+        cultivados e transportados com muito esforço. Compre um e apoie um comerciante local!</p>
+    <div class="valorxquantidade">
+        <p class="valor">R$ 2,29</p>
+        <input type="number" id="quantidade" class="input-qtd" name="quantidade" min="1" max="1000" value="1" step="1">
+        <span class="minibutton-2">unidade</span></div>
+            <button class="button">Compre agora</button>
+</section>
 
-    <p>Chega de momentos efêmeros! Com o revolucionário Kit de Reparo para Bolhas de Sabão PermaBubble, você não
-        é
-        mais
-        um espectador passivo, você é um cirurgião de bolhas.</p>
-
-    <p>Utilizando tecnologia de micro-tensão pendente de patente, nosso kit permite intervir no momento exato da
-        falha
-        estrutural, estendendo a vida útil de suas criações e transformando segundos de alegria em... bem,
-        talvez
-        alguns
-        segundos a mais.</p>
-
-    <button>Compre <b>agora</b> seu kit!</button>
-</div>
-
-<div class="kit">
-    <ul>
-        <li><b>100x Micro-Remendos InvisiPatch™ (Patente Pendente)</b>: Feitos de um polímero elástico mais leve
-            que
-            o
-            sabão, esses remendos transparentes são projetados para se fundir instantaneamente com a tensão
-            superficial da bolha, selando micro-fissuras antes que elas levem a uma falha catastrófica.</li>
-        <li><b>1x Pinça Pneumática de Precisão (A AirTweezer™)</b>: A joia do nosso kit! Tocar uma bolha com
-            metal é
-            impensável. A AirTweezer™ utiliza jatos de ar direcionados e controlados para aplicar o InvisiPatch™
-            sem
-            contato físico, garantindo que a integridade esférica da sua bolha seja mantida durante o delicado
-            procedimento de reparo.</li>
-        <li><b>1x Frasco de Sérum de Coesão Molecular (5ml)</b>: Para reparos mais complexos ou bolhas de grande
-            porte.
-            Este sérum atua como uma "solda líquida", reforçando a ligação entre as moléculas de água e sabão em
-            áreas enfraquecidas.</li>
-        <li><b>1x Manual de Instruções Detalhado (12 Páginas)</b>: Inclui diagramas complexos sobre a dinâmica
-            dos
-            fluidos,
-            técnicas avançadas de sutura de bolhas e um guia de solução de problemas (Ex: "O que fazer se o
-            remendo
-            for mais pesado que a bolha").</li>
-    </ul>
-</div>
-
-<div class="prova">
-    <h4>Depoimento de Cliente</h4>
-    <blockquote>"Eu costumava soprar cerca de 40 bolhas por minuto, e todas estouravam. Era devastador. Com o
-        Kit
-        PermaBubble, eu agora sopro 2 bolhas por minuto, pois passo 20 minutos tentando consertar cada uma.
-        Minha
-        taxa de sucesso de reparo é de 0,01%, mas é emocionante! 5 estrelas!"</blockquote>
-</div>
-<b>– Dr. Arnaldo Esférico, Entusiasta de Bolhas.</b>
-
-<div class="cta">
-    <h3>Não deixe a entropia ditar as regras da sua diversão. Assuma o controle. Repare o irremediável. Compre o
-        PermaBubble hoje!</h3>
-    <small>(Garantia: O Kit PermaBubble garante funcionar exatamente como descrito. Não garantimos que a bolha
-        sobreviverá ao reparo, ao ar, à gravidade ou à realidade.)</small>
-</div>
 {% endblock %}
