@@ -2,8 +2,7 @@ import os
 from flask import Flask, render_template
 from .config import Prod, Dev, Config
 from app.controllers import main
-
-from . import database_manager
+from database import database_manager
 
 def create_app():
     app = Flask(__name__)
